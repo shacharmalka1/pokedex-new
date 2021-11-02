@@ -1,0 +1,28 @@
+{
+  "name": "Pokedex",
+  "version": "1.0.0",
+  "description": "In this task you will build your own pokédex!\r Read,learn and use https://pokeapi.co/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shacharmalka1/Pokedex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shacharmalka1/Pokedex/issues"
+  },
+  "homepage": "https://github.com/shacharmalka1/Pokedex#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pokedex-promise-v2": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="vh-200" id="section1">
+      <div class="container py-1 h-200">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div
+              class="card"
+              id="list1"
+              style="border-radius: 0.75rem; background-color: #eff1f211"
+            >
+            <span id="connect"></span>
+              <div class="card-body py-4 px-4 px-md-5">
+                <p class="h1 text-center mt-2 mb-4 pb-4 text-white">
+                  <i class="fas fa-check-square me-1"></i>
+                  <span id="page-title">Pokedex</span>
+                </p>
+                <div class="row m-1 p-3">
+                  <div class="col col-11 mx-auto">
+                    <div class="input-group">
+                        <input type="search" id="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        />
+                        <button type="button" id="button" class="btn btn-outline-primary">Search pokemon</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vh-200" id="section2">
+      <div class="container py-3 h-200">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col pokemon-result">
+            <div
+              class="card"
+              id="list2"
+              style="border-radius: 0.75rem; background-color: #eff1f211"
+            >
+           <div class="text-center">
+            
+            <div id="signIn">
+              <input
+              
+              name="userName"
+              placeholder="username"
+              autocomplete="off"
+              id="userNameSignIn"
+            /><span><button id="signInButton" class="btn btn-outline-primary">Sign in</button></span>
+            </div>
+            <span><button  class="btn btn-outline-primary" id="catchButton"  >Catch</button></span>
+            <span><button class="btn btn-outline-primary" id="releaseButton" >Release</button></span>
+          </br>
+            <a href="#signUpButton">Register here</a>
+            <span id="pokeId" class="" style="display: none;"></span>
+                  <p id="pokemon-name" class="h5 text-cen  mt-2 mb-4 text-black">
+                    Name: <span id="name-value"  class="stats text-primary"></span>
+                  </p>
+                  <p id="height" class="h5 text-cen  mt-1 mb-4 text-black">
+                    Height: <span id="height-value" class="stats text-primary"></span>
+                  </p>
+                  <p id="weight" class="h5 text-cen  mt-1 mb-4  text-black">
+                    Weight: <span id="weight-value" class="stats text-primary"></span>
+                  </p>
+             
+                    <p id="types" class="h5 text-cen  mt-1 mb-4 text-black">
+                      Types: <span id="types-value" class="stats text-primary"></span>
+                    </p>
+                 
+                  <img
+                    src="img/pokedex2.jfif"
+                    id="img"
+                    alt="pokemon"
+                  />
+                  <ul id="related-pokemons" class="list-group" >
+                  </ul>
+                </br>
+                  <div id="signUp">
+                    <input
+                    
+                    name="userName"
+                    placeholder="username"
+                    autocomplete="off"
+                    id="userNameSignUp"
+                  /><span><button id="signUpButton" class="btn btn-outline-primary"  >Sign up</button></span>
+                  </div>
+           </div>
+          
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
